@@ -15,22 +15,22 @@
 				<p id="description">Let us know how we can improve FreeCodeCamp!</p>
 				<form>
 					<div class="field">
-						<label for="name" id="name-label">*Name:</label>
+						<label class="label" for="name" id="name-label">*Name:</label>
 						<input id="name" type="text" placeholder="Enter your name" required>					
 					</div>
 
 					<div class="field">
-						<label for="email" id="email-label">*E-mail:</label>
+						<label class="label" for="email" id="email-label">*E-mail:</label>
 						<input id="email" type="email" placeholder="Enter your e-mail address" required>
 					</div>
 
 					<div class="field">
-						<label for="number" id="number-label">*Age:</label>
+						<label class="label" for="number" id="number-label">*Age:</label>
 						<input id="number" type="number" min=0 max=120 placeholder="Please enter your age">
 					</div>
 
 					<div class="field">
-						<label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+						<label class="label" for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
 						<select id="dropdown">
 							<option value="student">Student</option>
 							<option value="job">Full-time Job</option>
@@ -41,7 +41,7 @@
 					</div>
 
 					<div class="field">
-						<label for="recommend" id="recommend-label">
+						<label class="label" for="recommend" id="recommend-label">
 						How likely are you to recommend freeCodeCamp to a friend?
 						</label>
 
@@ -62,7 +62,7 @@
 					</div>
 
 					<div class="field">
-						<label for="improve" id="improve-label">
+						<label class="label" for="improve" id="improve-label">
 							Things that should be improved in the future (check all that apply):
 						</label>
 
@@ -114,12 +114,14 @@
 					</div>
 
 					<div class="field">
-						<label for="comment" id="comment-label">
+						<label class="label" for="comment" id="comment-label">
 						Any comments or suggestions?
 						</label>
 
 						<textarea id="comment">Enter your comment here...</textarea>
 					</div>
+
+					<button id="submit-button" type="submit">Submit</button>
 				</form>
 			
 			</div>
