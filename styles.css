@@ -1,8 +1,28 @@
 * {
 	margin: 0px;
-	padding: 0px;
+	padding: 0;
+
 }
 
-h1 {
-	color: red;
+body {
+	background-color: #a9d7d1;
+}
+	
+
+#form-content {
+	max-width: 900px;
+	margin: 0px auto;
+	background-color: #FFF;
+	text-align: center;
+}
+
+#title {
+	text-align: center;
+}
+
+.field {
+	display: flex;
+	margin: 0px auto;
+	max-width: 70%;
+	justify-content: space-between;
 }
