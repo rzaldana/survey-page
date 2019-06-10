@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<title>A survey!</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="styles.css" type="text/css">
 	</head>
 
@@ -15,58 +16,78 @@
 				<p id="description">Let us know how we can improve FreeCodeCamp!</p>
 				<form>
 					<div class="field">
-						<label class="label" for="name" id="name-label">*Name:</label>
-						<input id="name" type="text" placeholder="Enter your name" required>					
+						<div class="right">
+							<label class="label" for="name" id="name-label">*Name:</label>
+						</div>
+						<div class="left">
+							<input id="name" type="text" placeholder="Enter your name" required>
+						</div>
 					</div>
 
 					<div class="field">
-						<label class="label" for="email" id="email-label">*E-mail:</label>
-						<input id="email" type="email" placeholder="Enter your e-mail address" required>
+						<div class="right">
+							<label class="label" for="email" id="email-label">*E-mail:</label>
+						</div>
+						<div class="left">
+							<input id="email" type="email" placeholder="Enter your e-mail address" required>
+						</div>
 					</div>
 
 					<div class="field">
-						<label class="label" for="number" id="number-label">*Age:</label>
-						<input id="number" type="number" min=0 max=120 placeholder="Please enter your age">
+						<div class="right">
+							<label class="label" for="number" id="number-label">*Age:</label>
+						</div>
+						<div class="left">
+							<input id="number" type="number" min=0 max=120 placeholder="Please enter your age">
+						</div>
 					</div>
 
 					<div class="field">
-						<label class="label" for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
-						<select id="dropdown">
-							<option value="student">Student</option>
-							<option value="job">Full-time Job</option>
-							<option value="learner">Full-time learner</option>
-							<option value="preferNo">Prefer not to say</option>
-							<option value="other">Other</option>
-						</select>
+						<div class="right">
+							<label class="label" for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+						</div>
+						<div class="left">
+							<select id="dropdown">
+								<option value="student">Student</option>
+								<option value="job">Full-time Job</option>
+								<option value="learner">Full-time learner</option>
+								<option value="preferNo">Prefer not to say</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
 					</div>
 
 					<div class="field">
-						<label class="label" for="recommend" id="recommend-label">
-						How likely are you to recommend freeCodeCamp to a friend?
-						</label>
-
-						<div id="recommend">
-							<label for="definitely">
-								<input id="definitely" type="radio" name="likelihood">Definitely
-							</label>
-
-							<label for="maybe">
-								<input id="maybe" type="radio" name="likelihood">Maybe
-							</label>
-
-							<label for="notsure">
-								<input id="notsure" type="radio" name="likelihood">Not Sure
+						<div class="right">
+							<label class="label" for="recommend" id="recommend-label">
+							How likely are you to recommend freeCodeCamp to a friend?
 							</label>
 						</div>
+						<div id="recommend" class="left">
+
+							 <label for="definitely">
+                                 <input id="definitely" type="radio" name="likelihood">Definitely
+							 </label>
+
+							 <label for="maybe">
+								<input id="maybe" type="radio" name="likelihood">Maybe
+							 </label>
+
+							 <label for="notsure">
+								<input id="notsure" type="radio" name="likelihood">Not Sure
+							 </label>
+                        </div>
 
 					</div>
 
 					<div class="field">
-						<label class="label" for="improve" id="improve-label">
-							Things that should be improved in the future (check all that apply):
-						</label>
-
-						<div id="improve">
+                        <div class="right">
+						  <label class="label" for="improve" id="improve-label">
+                              Things that should be improved in the future (check all that apply):
+						  </label>
+                        </div>
+                        
+						<div id="improve" class="left">
 							<label for="frontend">
 								<input id="frontend" type="checkbox" name="improvements" value="frontend">Front-end Projects
 							</label>
@@ -114,11 +135,15 @@
 					</div>
 
 					<div class="field">
-						<label class="label" for="comment" id="comment-label">
-						Any comments or suggestions?
-						</label>
-
-						<textarea id="comment">Enter your comment here...</textarea>
+                        <div class="right">
+                            <label class="label" for="comment" id="comment-label">
+                                Any comments or suggestions?
+				            </label>
+                        </div>
+                        
+                        <div class="left">
+						  <textarea id="comment">Enter your comment here...</textarea>
+                        </div>
 					</div>
 
 					<button id="submit-button" type="submit">Submit</button>
